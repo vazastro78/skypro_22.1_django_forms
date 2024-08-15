@@ -8,7 +8,12 @@ class Command(BaseCommand):
         """
         запуск отдельной функции
         """
+        self.clear_databases()
         self.handle_bulk_create(*args, **options)
+
+    def clear_databases(self):
+        Product.objects.all().delete()
+        Category.objects.all().delete()
 
     def handle_bulk_create(self, *args, **options):
         """
