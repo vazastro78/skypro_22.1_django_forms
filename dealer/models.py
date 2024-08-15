@@ -7,7 +7,7 @@ class Category(models.Model):
 
     def __str__(self):
         # Строковое отображение объекта
-        return f'{self.category_name} {self.description}'
+        return f'{self.pk} {self.category_name}'
 
     class Meta:
         verbose_name = 'категория' # Настройка для наименования одного объекта
@@ -22,11 +22,9 @@ class Product(models.Model):
     created_at = models.DateTimeField(verbose_name='дата создания')
     updated_at = models.DateTimeField(verbose_name='дата изменения')
 
-
-
     def __str__(self):
         # Строковое отображение объекта
-        return f'{self.product_name} {self.description} {self.preview_image} {self.category} {self.price} {self.created_at} {self.updated_at}'
+        return f'{self.pk} {self.product_name} {self.price} {self.category}'
 
     class Meta:
         verbose_name = 'продукт' # Настройка для наименования одного объекта
