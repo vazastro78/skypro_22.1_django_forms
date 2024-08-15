@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Category(models.Model):
-    category_name = models.CharField(max_length=50, verbose_name='наименование')
+    category_name = models.CharField(max_length=40, verbose_name='наименование')
     description = models.TextField(verbose_name='описание')
 
     def __str__(self):
