@@ -17,7 +17,6 @@
 - [x] задание 4
 
 ### Задание 1
-Задание 1
 
 - Создайте новый контроллер и шаблон, которые будут отвечать за отображение отдельной страницы с товаром, на которой необходимо вывести всю информацию о самом товаре.
 
@@ -65,5 +64,7 @@
 create repository on github and synchronize with offline repository
 
 git remote add origin git@github.com:vazastro78/skypro_20.2_django_templates.git 
+
 git branch -M main
+
 git push -u origin main
