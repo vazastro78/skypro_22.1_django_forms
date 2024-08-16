@@ -8,4 +8,5 @@ def index(request):
         email = request.POST.get("email")
         message = request.POST.get("message")
         print( f'{username} ({email},{message})')
-    return render(request, 'dealer/index.html')
+    return render(request, 'dealer/mainpage.html')
+
