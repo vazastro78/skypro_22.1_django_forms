@@ -7,14 +7,14 @@
 - шаблоны
 - templates
 - django
+- шаблонный фильтр
+- шаблонный тег
 
 ### Критерии выполнения заданий
 - [x] задание 1
 - [x] задание 2
 - [x] задание 3
 - [x] задание 4
-- [x] задание 5
-- [x] задание 6
 
 ### Задание 1
 Задание 1
@@ -57,13 +57,13 @@
   - создан тег get_media_prefix
   - создан фильтр mediapath
 
->commit: ?
+>commit: d0ae18ebdea8bc472e7c9f7aba98d32dd681f93b
 > 
 >Шаблоны20.2 Задание4 Создан шаблонный фильтр mediapath или шаблонный тег get_media_prefix 
 
 #### github
 create repository on github and synchronize with offline repository
 
-git remote add origin git@github.com:vazastro78/skypro_20.2_django_templates.git
+git remote add origin git@github.com:vazastro78/skypro_20.2_django_templates.git 
 git branch -M main
 git push -u origin main
